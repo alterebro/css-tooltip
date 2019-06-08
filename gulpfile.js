@@ -14,7 +14,7 @@ function postCSS() {
         .pipe(dest('./dist'));
 }
 function postCSSmin() {
-    return src('./src/*.css')
+    return src('./src/*.scss')
     .pipe(sass().on('error', sass.logError))
         .pipe(postcss([
             require('autoprefixer'),
