@@ -1,0 +1,29 @@
+{
+  "name": "css-tooltip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "postcss": {
+    "parser": "sugarss",
+    "map": false,
+    "plugins": {
+      "postcss-nested": {},
+      "autoprefixer": {},
+      "cssnano": {}
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "postcss-nested": "^4.1.2"
+  }
+}
