@@ -1,0 +1,92 @@
+[data-tooltip] {
+
+    --bg-color : #222;
+    --fg-color : #eee;
+
+    position: relative;
+    display: inline-block;
+
+    &:after, &:before {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -12px);
+        z-index: 1000;
+        pointer-events: none;
+        user-select: none;
+        opacity: 0;
+        transition: opacity .35s ease .25s;
+    }
+
+    // Tooltip Body
+    &:after {
+        content: attr(data-tooltip);
+        background: var(--bg-color);
+        color: var(--fg-color);
+        padding: 1rem;
+        white-space: nowrap;
+        bottom: 100%;
+    }
+
+    // Tooltip Arrow
+    &:before {
+        content: '';
+        background: transparent;
+        border: 8px solid transparent;
+        border-top-color: var(--bg-color);
+    }
+
+    // Active state
+    &:hover, &:focus, &:active {
+        &:after, &:before {
+            opacity: 1
+        }
+    }
+
+    // ----------------------------------------------------
+    // Extra Styles :
+    // Multi-line tooltip (.tooltip-multiline)
+    &.tooltip-multiline {
+        &:after {
+            width: 100%;
+            max-width: 320px;
+            white-space: normal;
+        }
+    }
+
+    // ----------
+    // Bottom tooltip (.tooltip-bottom, *-left, *-right )
+    &[class*="tooltip-bottom"] {
+        &:after, &:before { transform: translate(-50%, 12px) }
+        &:after {
+            bottom: auto;
+            top: 100%;
+        }
+        &:before {
+            bottom: 0;
+            border: 8px solid transparent;
+            border-bottom-color: var(--bg-color);
+        }
+    }
+    &.tooltip-bottom-left:after {
+        transform: translate(-24px, 12px);
+    }
+    &.tooltip-bottom-right:after {
+        left: auto;
+        right: 50%;
+        transform: translate(24px, 12px);
+    }
+
+    // ----------
+    // Top tooltip (.tooltip-top, *-left, *-right )
+    // .tooltip-top not needed (default style)
+    &.tooltip-top-left:after {
+        transform: translate(-24px, -12px);
+    }
+    &.tooltip-top-right:after {
+        left: auto;
+        right: 50%;
+        transform: translate(24px, -12px);
+    }
+    // End extra styles
+    // ----------------------------------------------------
+}
