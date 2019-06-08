@@ -22,13 +22,8 @@
         content: attr(data-tooltip);
         background: var(--bg-color);
         color: var(--fg-color);
-        padding: 12px;
+        padding: 1rem;
         bottom: 100%;
-        /* border-radius: 4px; */
-        /* width: 240px; */
-        /* font-size: 14px;
-        font-weight: 400;
-        line-height: 1.5; */
         white-space: nowrap;
     }
 
