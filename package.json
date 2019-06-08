@@ -19,7 +19,9 @@
   },
   "scripts": {
     "build": "rm -rf dist && gulp build",
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "version": "npm run build && git add -A dist/",
+    "postversion": "git push && git push --tags && npm publish"    
   },
   "repository": {
     "type": "git",
