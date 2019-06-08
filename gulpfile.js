@@ -4,10 +4,11 @@ const sass = require('gulp-sass');
 const rename = require('gulp-rename');
 const postcss = require('gulp-postcss');
 
+sass.compiler = require('node-sass');
 
 function postCSS() {
     return src('./src/*.scss')
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass.sync({outputStyle: 'expanded'}).on('error', sass.logError))
         .pipe(postcss([
             require('autoprefixer'),
         ]))
