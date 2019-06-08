@@ -1,0 +1,19 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    width: 90%;
+    max-width: 42rem;
+    margin: 3rem auto;
+}
+h1 {
+    font-size: 150%;
+    font-weight: 500;
+    border-bottom: solid #ddd 1px;
+}
+[data-tooltip]{ border-bottom: dotted #999 1px }
+[data-tooltip]:before {
+    font-weight: 300;
+    font-size: 80%;
+}

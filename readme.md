@@ -1,4 +1,4 @@
-# CSS-tooltip
+# css-tooltip
 
 > Only CSS lightweight and simple tooltips
 
@@ -28,7 +28,7 @@ Add the `data-tooltip` attribute to the element you want the tooltip in, the val
 ### Development
 
 ```sh
-# ./src/css-tooltip.css
+# ./src/css-tooltip.scss
 $ npm run watch
 $ npm run build
 ```
