@@ -1,4 +1,5 @@
 [data-tooltip] {
+
     --bg-color : #eee;
     --fg-color : #333;
 
@@ -21,18 +22,23 @@
         transition: opacity .35s ease .25s;
     }
 
+    /* Body */
+
     [data-tooltip]:after {
         content: attr(data-tooltip);
-        bottom: 100%;
         background: var(--bg-color);
         color: var(--fg-color);
         padding: 12px;
-        border-radius: 4px;
-        width: 240px;
-        font-size: 14px;
+        bottom: 100%;
+        /* border-radius: 4px; */
+        /* width: 240px; */
+        /* font-size: 14px;
         font-weight: 400;
-        line-height: 1.5;
+        line-height: 1.5; */
+        white-space: nowrap;
     }
+
+    /* Arrow */
 
     [data-tooltip]:before {
         content: '';
@@ -41,4 +47,6 @@
         border-top-color: var(--bg-color);
     }
 
-    [data-tooltip]:hover:after, [data-tooltip]:hover:before, [data-tooltip]:focus:after, [data-tooltip]:focus:before, [data-tooltip]:active:after, [data-tooltip]:active:before { opacity: 1 }
+    [data-tooltip]:hover:after, [data-tooltip]:hover:before, [data-tooltip]:focus:after, [data-tooltip]:focus:before, [data-tooltip]:active:after, [data-tooltip]:active:before {
+            opacity: 1
+        }
