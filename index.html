@@ -5,11 +5,27 @@
     <title>CSS Tooltip</title>
     <link rel="stylesheet" href="dist/css-tooltip.min.css" />
 <style media="screen">
-html, body {
-    margin: 1rem;
+html {}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    width: 90%;
+    max-width: 42rem;
+    margin: 3rem auto;
+}
+h1 {
+    font-size: 150%;
+    font-weight: 500;
+    border-bottom: solid #ddd 1px;
 }
 [data-tooltip]{
     border-bottom: dotted #999 1px;
+}
+[data-tooltip]:before {
+    font-weight: 300;
+    font-size: 80%;
 }
 </style>
 </head>
@@ -19,19 +35,19 @@ html, body {
     <p>Lorem ipsum dolor sit amet. Sample <span data-tooltip="Tooltip is visible on this element">tooltip span here</span>, but not here... </p>
     <blockquote>
         <p>
-            Lorem ipsum dolor sit amet ... <a href="#" data-tooltip="Lorem ipsum dolor sit amet...">tootltip</a>
+            Lorem ipsum dolor sit amet ... <a href="" data-tooltip="Lorem ipsum dolor sit amet...">tootltip</a>
         </p>
     </blockquote>
     <p>
 
-        <br> ...  <a href="#" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae augue maximus" class="tooltip-multiline tooltip-bottom">tootltip multiline, tooltip bottom</a>
-         / <a href="#" data-tooltip="Lorem ipsum dolor sit amet..." class="tooltip-bottom-right">tootltip (bottom right)</a>
-        <br><a href="#" data-tooltip="Lorem ipsum dolor sit amet..." class="tooltip-bottom-left">tootltip (bottom left)</a>
+        <br> ...  <a href="" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae augue maximus" class="tooltip-multiline tooltip-bottom">tootltip multiline, tooltip bottom</a>
+         / <a href="" data-tooltip="Lorem ipsum dolor sit amet..." class="tooltip-bottom-right">tootltip (bottom right)</a>
+        <br><a href="" data-tooltip="Lorem ipsum dolor sit amet..." class="tooltip-bottom-left">tootltip (bottom left)</a>
     </p>
 
     <ul>
-        <li><a href="#" data-tooltip="Lorem ipsum dolor sit amet" class="tooltip-top">Tooltip top (default)</a></li>
-        <li><a href="#" data-tooltip="Lorem ipsum dolor sit amet" class="tooltip-top-left">Tooltip top left</a> / ... / <a href="#" data-tooltip="Lorem ipsum dolor sit amet" class="tooltip-top-right">Tooltip top right</a></li>
+        <li><a href="" data-tooltip="Lorem ipsum dolor sit amet" class="tooltip-top">Tooltip top (default)</a></li>
+        <li><a href="" data-tooltip="Lorem ipsum dolor sit amet" class="tooltip-top-left">Tooltip top left</a> / ... / <a href="" data-tooltip="Lorem ipsum dolor sit amet" class="tooltip-top-right">Tooltip top right</a></li>
     </ul>
 
 
