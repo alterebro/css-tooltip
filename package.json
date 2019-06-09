@@ -1,6 +1,6 @@
 {
   "name": "css-tooltip",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Only CSS lightweight, minimal and simple tooltips",
   "main": "dist/css-tooltip.min.css",
   "browserslist": [
@@ -27,10 +27,16 @@
     "type": "git",
     "url": "git+https://github.com/alterebro/css-tooltip.git"
   },
-  "keywords": ["CSS", "tooltip", "lightweight", "minimal", "simple"],
+  "keywords": [
+    "CSS",
+    "tooltip",
+    "lightweight",
+    "minimal",
+    "simple"
+  ],
   "author": "Jorge Moreno @alterebro (moro.es)",
   "bugs": {
-      "url": "https://github.com/alterebro/css-tooltip/issues"
+    "url": "https://github.com/alterebro/css-tooltip/issues"
   },
   "homepage": "https://github.com/alterebro/css-tooltip#readme",
   "license": "ISC",
