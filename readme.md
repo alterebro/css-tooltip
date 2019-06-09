@@ -9,6 +9,18 @@
 > Only CSS lightweight, minimal and simple tooltips
 
 
+## Install
+
+```sh
+$ npm i css-tooltip
+```
+
+css-tooltip can also be directly included from [unpkg.com](https://unpkg.com//css-tooltip):
+
+```html
+<link rel="stylesheet" src="https://unpkg.com/css-tooltip" />
+```
+
 ## Usage
 
 Include the `css-tooltip` minified stylesheet file on the head of your document.
@@ -16,7 +28,7 @@ Include the `css-tooltip` minified stylesheet file on the head of your document.
 ```html
 <head>
     ...
-    <link rel="stylesheet" href="css-tooltip.min.css" />
+    <link rel="stylesheet" href="/path/to/css-tooltip.min.css" />
 </head>
 ```
 Add the `data-tooltip` attribute to the element you want the tooltip in. The value of that attribute will be the text shown by the tooltip
@@ -39,7 +51,7 @@ Positioning :
 - `tooltip-top-right` : Places the tooltip at the top right.
 - `tooltip-top-left` : Places the tooltip at the top left.
 
-*There's no `tooltip-top` class as it is the default styling for the tooltip`*
+*There's no `tooltip-top` class as it is the default styling for the tooltip*
 
 ### Example:
 
