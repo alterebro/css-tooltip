@@ -24,9 +24,17 @@ a {
     font-weight: 500;
     text-decoration: none;
 }
+img {
+    display: block;
+    max-width: 100%;
+}
 pre, code {
     font-family : "Andale Mono", "Monaco", "Lucida Console", "Menlo", "Consolas", "Roboto Mono", "Liberation Mono", monospace;
     background: #cff;
+    border-radius: 3px;
+}
+pre {
+    overflow-x: scroll;
 }
 code {
     padding: 3px 5px;
