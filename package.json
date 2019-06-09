@@ -1,7 +1,7 @@
 {
   "name": "css-tooltip",
-  "version": "1.0.0",
-  "description": "Only CSS lightweight and simple tooltips",
+  "version": "0.1.0",
+  "description": "Only CSS lightweight, minimal and simple tooltips",
   "main": "dist/css-tooltip.min.css",
   "browserslist": [
     "> 1%",
@@ -21,13 +21,13 @@
     "build": "rm -rf dist && gulp build",
     "watch": "gulp watch",
     "version": "npm run build && git add -A dist/",
-    "postversion": "git push && git push --tags && npm publish"    
+    "postversion": "git push && git push --tags && npm publish"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alterebro/css-tooltip.git"
   },
-  "keywords": ["CSS", "tooltip", "lightweight", "minimal"],
+  "keywords": ["CSS", "tooltip", "lightweight", "minimal", "simple"],
   "author": "Jorge Moreno @alterebro (moro.es)",
   "bugs": {
       "url": "https://github.com/alterebro/css-tooltip/issues"
