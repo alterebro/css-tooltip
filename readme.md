@@ -4,7 +4,7 @@
 
 ------
 
-# css-tooltip
+# 💬 css-tooltip
 
 > Only CSS lightweight, minimal and simple tooltips
 

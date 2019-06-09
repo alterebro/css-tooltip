@@ -1,50 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>CSS Tooltip</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Jorge Moreno aka moro, moro.es (@alterebro)" />
+    <link rel="me" href="https://twitter.com/alterebro" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="https://unpkg.com/css-tooltip" />
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <p align="center"><img src="css-tooltip.png" srcset="css-tooltip.png 2x" alt="CSS tooltip" /></p>
+    <header>
+        <p align="center"><img src="css-tooltip.png" srcset="css-tooltip.png 2x" alt="CSS tooltip" /></p>
 
-    <h1>CSS Tooltip</h1>
-    <p>Only CSS lightweight, minimal and simple tooltips</p>
+        <h1>💬 CSS Tooltip</h1>
+        <p>Only CSS lightweight, minimal and simple <span data-tooltip="Cool!">tooltips 💬</span></p>
+    </header>
 
-    <h2>Usage</h2>
-    <p>
-        Install the package via npm (<code>npm i css-tooltip</code>) or directly you can include it from unpkg.com.
-        Just include a link tag to the tooltip css file on the head of your document:
-    </p>
-    <pre><mark>&lt;link rel="stylesheet" src="https://unpkg.com/css-tooltip" /&gt;</mark></pre>
-    <p>
-        Add the data-tooltip attribute to the element you want the tooltip in:
-    </p>
-    <pre><mark>&lt;span data-tooltip="Tooltip text"&gt;tooltip&lt;/span&gt;</mark></pre>
+    <main>
+        <h2>Usage</h2>
+        <p>
+            Install the package via npm (<code>npm i css-tooltip</code>) or directly you can include it from unpkg.com.
+            Just include a link tag to the tooltip css file on the head of your document:
+        </p>
+        <pre><code>&lt;link rel="stylesheet" src="https://unpkg.com/css-tooltip" /&gt;</code></pre>
+        <p>
+            Add the data-tooltip attribute to the element you want the tooltip in:
+        </p>
+        <pre><code>&lt;span data-tooltip="Tooltip text"&gt;tooltip&lt;/span&gt;</code></pre>
 
-    <p>
-        You can also use different classes to style the tooltip with different positioning:
-        <code><mark>.tooltip-multiline, .tooltip-bottom, .tooltip-bottom-right, .tooltip-bottom-left, .tooltip-top-right, .tooltip-top-left</mark></code>
-    </p>
+        <p>
+            You can also use different classes to style the tooltip with different positioning:
+            <code>.tooltip-multiline, .tooltip-bottom, .tooltip-bottom-right, .tooltip-bottom-left, .tooltip-top-right, .tooltip-top-left</code>
+        </p>
 
-    <h2>Examples</h2>
-    <p>Lorem ipsum dolor sit amet. Sample <span data-tooltip="Tooltip is visible on this element">tooltip span here</span>, but not here... </p>
-    <blockquote>
-        <p>Lorem ipsum dolor sit amet ... <a href="" data-tooltip="Lorem ipsum dolor sit amet...">tootltip</a></p>
-    </blockquote>
-    <p>
-        ...  <a href="" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae augue maximus" class="tooltip-multiline tooltip-bottom">tootltip multiline, tooltip bottom</a>
-         / <a href="" data-tooltip="Lorem ipsum dolor sit amet..." class="tooltip-bottom-right">tootltip (bottom right)</a>
-        <br><a href="" data-tooltip="Lorem ipsum dolor sit amet..." class="tooltip-bottom-left">tootltip (bottom left)</a>
-    </p>
-    <ul>
-        <li><a href="" data-tooltip="Lorem ipsum dolor sit amet" class="tooltip-top">Tooltip top (default)</a></li>
-        <li><a href="" data-tooltip="Lorem ipsum dolor sit amet" class="tooltip-top-left">Tooltip top left</a> / ... / <a href="" data-tooltip="Lorem ipsum dolor sit amet" class="tooltip-top-right">Tooltip top right</a></li>
-    </ul>
+        <h2>Examples</h2>
+        <p>Lorem ipsum dolor sit amet. Sample <span data-tooltip="Tooltip is visible on this element">tooltip span here</span>, but not here... </p>
+        <blockquote>
+            <p>Lorem ipsum dolor sit amet ... <a href="" data-tooltip="Lorem ipsum dolor sit amet...">tootltip</a></p>
+        </blockquote>
+        <p>
+            ...  <a href="" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae augue maximus" class="tooltip-multiline tooltip-bottom">tootltip multiline, tooltip bottom</a>
+             / <a href="" data-tooltip="Lorem ipsum dolor sit amet..." class="tooltip-bottom-right">tootltip (bottom right)</a>
+            <br><a href="" data-tooltip="Lorem ipsum dolor sit amet..." class="tooltip-bottom-left">tootltip (bottom left)</a>
+        </p>
+        <ul>
+            <li><a href="" data-tooltip="Lorem ipsum dolor sit amet" class="tooltip-top">Tooltip top (default)</a></li>
+            <li><a href="" data-tooltip="Lorem ipsum dolor sit amet" class="tooltip-top-left">Tooltip top left</a> / ... / <a href="" data-tooltip="Lorem ipsum dolor sit amet" class="tooltip-top-right">Tooltip top right</a></li>
+        </ul>
 
+        <h2>More Info</h2>
+        <ul>
+            <li>GitHub Repository : <a href="https://github.com/alterebro/css-tooltip" target="_blank" data-tooltip="GitHub">github.com/alterebro/css-tooltip</a></li>
+            <li>NPM package : <a href="https://npm.im/css-tooltip" target="_blank" data-tooltip="NPM">npm.im/css-tooltip</a></li>
+            <li>UNPKG link : <a href="http://unpkg.com/css-tooltip" target="_blank" data-tooltip="UNPKG">unpkg.com/css-tooltip</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <hr />
+        <p align="center">
+            <a href="https://twitter.com/alterebro" data-tooltip="Jorge Moreno aka Moro, @alterebro">Jorge Moreno &mdash; <strong>@alterebro</strong></a>
+        </p>
+    </footer>
 
 </body>
 </html>
