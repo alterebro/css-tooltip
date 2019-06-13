@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="docs/css-tooltip.png"><br>
+    <a href="https://alterebro.github.io/css-tooltip/"><img src="docs/css-tooltip.png"></a><br>
 </p>
 
 ------
@@ -15,7 +15,8 @@
 $ npm i css-tooltip
 ```
 
-css-tooltip can also be directly included from [unpkg.com](https://unpkg.com//css-tooltip):
+You can [download it here](https://github.com/alterebro/css-tooltip/archive/master.zip) or
+include the `css` file directly from [unpkg.com](https://unpkg.com/css-tooltip):
 
 ```html
 <link rel="stylesheet" src="https://unpkg.com/css-tooltip" />
@@ -82,7 +83,7 @@ $shadow             : 0 5px 15px -5px rgba(0, 0, 0, .65); // 0 || box-shadow
 $load-styles        : true !default; // false to remove the extra styles.
 ```
 
-Then you'll have to build the CSS file
+Then you'll have to build the CSS file:
 
 ## Development
 
