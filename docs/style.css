@@ -24,6 +24,9 @@ a {
     font-weight: 500;
     text-decoration: none;
 }
+a:hover {
+    color: #000;
+}
 img {
     display: block;
     max-width: 100%;
@@ -46,6 +49,13 @@ hr {
     border: none;
     border-bottom: solid #ddd 1px;
 }
+
+.examples {
+    border: dotted #bee 2px;
+    border-radius: 3px;
+    padding: .5rem 2rem;
+}
+
 
 [data-tooltip]{ border-bottom: solid #9ff 2px }
 [data-tooltip]:before {
