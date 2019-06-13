@@ -38,7 +38,7 @@
   "bugs": {
     "url": "https://github.com/alterebro/css-tooltip/issues"
   },
-  "homepage": "https://github.com/alterebro/css-tooltip#readme",
+  "homepage": "https://alterebro.github.io/css-tooltip/",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^9.6.0",

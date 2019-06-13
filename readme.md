@@ -34,7 +34,7 @@ Include the `css-tooltip` minified stylesheet file on the head of your document.
 Add the `data-tooltip` attribute to the element you want the tooltip in. The value of that attribute will be the text shown by the tooltip
 
 ```html
-<a href="#" data-tooltip="Lorem ipsum dolor sit amet...">tootltip</a>
+<a href="#" data-tooltip="Lorem ipsum dolor sit amet...">tooltip</a>
 ```
 
 ## Styles
@@ -55,17 +55,22 @@ Positioning :
 
 ### Example:
 
-A multiline tooltip located on the bottom left :
+You just need to add the class with the style you want to apply, for example, a multiline tooltip located on the bottom left would have the class `tooltip-multiline tooltip-bottom-left` :
 
 ```html
 <a href="#" class="tooltip-multiline tooltip-bottom-left" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a venenatis massa.">tootltip</a>
 ```
 
+The following page has got some examples using the different styles : [alterebro.github.io/css-tooltip/](https://alterebro.github.io/css-tooltip/)
+
+
 ## Customize
 
-You can customize the output of the tooltip by tweaking the source file variables `src/css-tooltip.scss` (self explanatory names)
+You can customize the output of the tooltip by tweaking the source file variables `src/css-tooltip.scss`.
 
 ```scss
+// Self explanatory names
+
 $background-color   : #333;
 $foreground-color   : #eee;
 $arrow-size         : 8px;
@@ -77,13 +82,17 @@ $shadow             : 0 5px 15px -5px rgba(0, 0, 0, .65); // 0 || box-shadow
 $load-styles        : true !default; // false to remove the extra styles.
 ```
 
+Then you'll have to build the CSS file
 
 ## Development
 
 ```sh
-# ./src/css-tooltip.scss
-$ npm run watch
-$ npm run build
+# Install dependencies
+$ npm install
+
+# Edit as your wish the main file ./src/css-tooltip.scss
+$ npm run watch  # to see changes while editing the file
+$ npm run build  # to create the distributable files
 ```
 
 ## License
