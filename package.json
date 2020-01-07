@@ -1,6 +1,6 @@
 {
   "name": "css-tooltip",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Only CSS lightweight, minimal and simple tooltips",
   "main": "dist/css-tooltip.min.css",
   "browserslist": [
