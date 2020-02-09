@@ -4,7 +4,7 @@
 
 ------
 
-# 💬 css-tooltip
+# 💬 css-tooltip [![npm](https://img.shields.io/npm/v/css-tooltip.svg?label=&color=24292e)](https://github.com/alterebro/css-tooltip/releases/latest)
 
 > Only CSS lightweight, minimal and simple tooltips
 
