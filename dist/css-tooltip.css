@@ -79,3 +79,17 @@
   right: 50%;
   transform: translate(24px, -12px);
 }
+
+[data-tooltip].tooltip-light:before {
+  background: #fff;
+  color: #333;
+}
+
+[data-tooltip].tooltip-light:after {
+  border-top-color: #fff;
+}
+
+[data-tooltip].tooltip-light[class*="tooltip-bottom"]:after {
+  border-top-color: transparent;
+  border-bottom-color: #fff;
+}
