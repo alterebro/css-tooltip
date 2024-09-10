@@ -1,13 +1,14 @@
 
-$background-color   : #333;
-$foreground-color   : #eee;
-$arrow-size         : 8px;
-$vertical-shift     : 12px;
-$multiline-width    : 240px;
-$tooltip-padding    : 8px 12px;
-$roundness          : 3px; // 0 || border-radius
-$shadow             : 0 5px 15px -5px rgba(0, 0, 0, .65); // 0 || box-shadow
-$load-styles        : true !default; // Extra styles needed?
+$background-color       : #333;
+$foreground-color       : #eee;
+$light-background-color : #fff;
+$arrow-size             : 8px;
+$vertical-shift         : 12px;
+$multiline-width        : 240px;
+$tooltip-padding        : 8px 12px;
+$roundness              : 3px; // 0 || border-radius
+$shadow                 : 0 5px 15px -5px rgba(0, 0, 0, .65); // 0 || box-shadow
+$load-styles            : true !default; // Extra styles needed?
 
 [data-tooltip] {
 
@@ -98,6 +99,22 @@ $load-styles        : true !default; // Extra styles needed?
             right: 50%;
             transform: translate( $arrow-size*3, -$vertical-shift);
         }
+
+        // Light theme tooltip
+        &.tooltip-light {
+            &:before {
+                background: $light-background-color;
+                color: $background-color;
+            }
+            &:after {
+                border-top-color: $light-background-color;
+            }
+            &[class*="tooltip-bottom"]:after {
+                border-top-color: transparent;
+                border-bottom-color: $light-background-color;
+            }
+        }
+
         // End extra styles
         // ----------------------------------------------------
     }
